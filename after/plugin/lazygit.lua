@@ -1,0 +1,1 @@
+vim.keymap.set('n', '<leader>g', "<Cmd>:LazyGit<CR>", { desc = "LazyGit" })

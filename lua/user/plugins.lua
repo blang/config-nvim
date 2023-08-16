@@ -106,4 +106,12 @@ require("lazy").setup({
     {
         'declancm/maximize.nvim',
     },
+    -- Lazygit nvim
+    {
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
+    },
 })
