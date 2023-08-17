@@ -61,12 +61,12 @@ require("lazy").setup({
         },
         lazy = false,
     },
-    -- Telescope file browser plugin
-    {
-        "nvim-telescope/telescope-file-browser.nvim",
-        dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", 'nvim-tree/nvim-web-devicons' }
-
-    },
+    -- -- Telescope file browser plugin, replaced with oil
+    -- {
+    --     "nvim-telescope/telescope-file-browser.nvim",
+    --     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", 'nvim-tree/nvim-web-devicons' }
+    --
+    -- },
     -- Terminal in vim
     { 'akinsho/toggleterm.nvim',            version = "*", config = true },
     -- Indent lines as guides
@@ -114,4 +114,21 @@ require("lazy").setup({
             "nvim-lua/plenary.nvim",
         },
     },
+    -- Telescope fzf native
+    {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        dependencies = {
+            {
+                "nvim-telescope/telescope.nvim",
+            },
+        },
+        build =
+        'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+    },
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    }
 })

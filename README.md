@@ -11,6 +11,7 @@ Nothing was connected as i wanted it to be and keybindungs existed but were neve
 [ ] Terraform language server
 [x] Copy and paste
 [ ] Git fugative git integration
+[x] Git Lazygit
 [x] File browser
 [x] Telescope C-j C-k instead of C-n and C-p
 [ ] Undotree
@@ -23,6 +24,7 @@ Nothing was connected as i wanted it to be and keybindungs existed but were neve
 [ ] Bind git files
 [x] Learn harpoon
 [ ] Learn telescope
+[ ] Telescope native fzf
 [ ] Learn Lsp
 [ ] Learn Snippets
 [x] Navic
