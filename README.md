@@ -10,13 +10,13 @@ Nothing was connected as i wanted it to be and keybindungs existed but were neve
 [x] Commenter
 [ ] Terraform language server
 [x] Copy and paste
-[ ] Git fugative git integration
+[x] Git fugative git integration
 [x] Git Lazygit
 [x] File browser
 [x] Telescope C-j C-k instead of C-n and C-p
 [ ] Undotree
 [x] Let comment not add comments on new lines after a comment
-[ ] Terminal
+[x] Terminal
 [x] Harpoon
 [ ] Harpoon quick access
 [ ] Harpoon Split is C-v, Telescope is M-v
@@ -24,7 +24,7 @@ Nothing was connected as i wanted it to be and keybindungs existed but were neve
 [ ] Bind git files
 [x] Learn harpoon
 [ ] Learn telescope
-[ ] Telescope native fzf
+[x] Telescope native fzf
 [ ] Learn Lsp
 [ ] Learn Snippets
 [x] Navic
@@ -34,6 +34,7 @@ Nothing was connected as i wanted it to be and keybindungs existed but were neve
 [x] Quick fullsize one split
 [ ] Search highlight enable disable
 [?] Fix all plugins to specific version
+[ ] Learn motions: `:h motions.txt`
 
 
 
@@ -45,3 +46,17 @@ Nothing was connected as i wanted it to be and keybindungs existed but were neve
 `ZZ` save and close window
 In Telescope <C-v> to open file in vertical split
 `<leader>s` for splits
+`C-^` go to last buffer
+`g.` in Oil shows hidden files
+`C-g` show current full file name
+# Motions
+`n` - `(` `)` Sentence up and down
+`n` - `{` `}` Paragraph down and up
+`n` - `[[` `]]` Sections up and down
+`v` - `ap` `ip`  Select paragraph
+Marks: `m` and `\``
+`n` - `m<` then `m>` mark beginning of end of `gv` block
+`mA-Z` are global marks you can jump to other files
+
+# Errors and problems
+in toggleterm use C+r to look backwards in history will crash urxvtd

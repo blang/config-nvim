@@ -11,7 +11,7 @@ vim.keymap.set("n", "Q", "<nop>")
 -- Format file based on lsp
 vim.keymap.set("n", "<leader>rf", vim.lsp.buf.format)
 
-vim.keymap.set("n", "<leader>q", "<Cmd>:qa<CR>")
+vim.keymap.set("n", "<leader><leader>q", "<Cmd>:qa<CR>")
 -- Move window panes easily, now done with smart-splits
 -- vim.keymap.set("n", "<C-h>", "<C-W>h")
 -- vim.keymap.set("n", "<C-j>", "<C-W>j")

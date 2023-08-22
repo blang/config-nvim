@@ -107,13 +107,13 @@ require("lazy").setup({
         'declancm/maximize.nvim',
     },
     -- Lazygit nvim
-    {
-        "kdheepak/lazygit.nvim",
-        -- optional for floating window border decoration
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-        },
-    },
+    -- {
+    --     "kdheepak/lazygit.nvim",
+    --     -- optional for floating window border decoration
+    --     dependencies = {
+    --         "nvim-lua/plenary.nvim",
+    --     },
+    -- },
     -- Telescope fzf native
     {
         'nvim-telescope/telescope-fzf-native.nvim',
@@ -125,10 +125,16 @@ require("lazy").setup({
         build =
         'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
     },
+    -- File browser
     {
         'stevearc/oil.nvim',
         opts = {},
         -- Optional dependencies
         dependencies = { "nvim-tree/nvim-web-devicons" },
-    }
+    },
+    -- Vim git
+    {
+        'tpope/vim-fugitive',
+    },
+
 })
