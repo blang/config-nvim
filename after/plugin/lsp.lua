@@ -36,7 +36,7 @@ end)
 
 -- Attach navic breadcrumbs
 lsp.on_attach(function(client, bufnr)
-    print("should attach navic")
+    -- print("should attach navic")
     if client.server_capabilities.documentSymbolProvider then
         local navic = require("nvim-navic")
         navic.attach(client, bufnr)

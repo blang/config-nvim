@@ -6,7 +6,9 @@ local builtin = require('telescope.builtin')
 --end)
 vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = "git files" })
 vim.keymap.set('n', '<leader>vh', builtin.help_tags, { desc = "help tags [telescope]" })
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "files [telescope]" })
+vim.keymap.set('n', '<leader>ff',
+    function() builtin.find_files({ find_command = { 'rg', '--files', '--hidden', '-g', '!.git' } }) end,
+    { desc = "files [telescope]" })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "grep [telescope]" })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "buffers [telescope]" })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "helm tags [telescope]" })

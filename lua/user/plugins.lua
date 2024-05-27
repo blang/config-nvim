@@ -70,7 +70,7 @@ require("lazy").setup({
     -- Terminal in vim
     { 'akinsho/toggleterm.nvim',            version = "*", config = true },
     -- Indent lines as guides
-    { "lukas-reineke/indent-blankline.nvim" },
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     -- Shows breadcrumbs on top of editor
     {
         "SmiteshP/nvim-navic",
