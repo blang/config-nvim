@@ -1,0 +1,40 @@
+-- local navic = require("nvim-navic")
+-- return {
+-- 	{
+-- 		"nvim-lualine/lualine.nvim",
+-- 		dependencies = { "nvim-tree/nvim-web-devicons" },
+-- 		opts = {
+-- 			options = {
+-- 				theme = "everforest",
+-- 			},
+-- 			-- sections = {
+-- 			--     lualine_c = {
+-- 			--         {
+-- 			--             function()
+-- 			--                 return navic.get_location()
+-- 			--             end,
+-- 			--             cond = function()
+-- 			--                 return navic.is_available()
+-- 			--             end
+-- 			--         },
+-- 			--     }
+-- 			-- },
+-- 			-- OR in winbar
+-- 			-- navic breadcrumbs
+-- 			winbar = {
+-- 				lualine_c = {
+-- 					{
+-- 						function()
+-- 							return navic.get_location()
+-- 						end,
+-- 						cond = function()
+-- 							return navic.is_available()
+-- 						end,
+-- 					},
+-- 				},
+-- 			},
+-- 		},
+-- 	},
+-- }
+return {}
+-- vim: ts=2 sts=2 sw=2 et
