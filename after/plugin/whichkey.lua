@@ -1,5 +1,0 @@
--- local wk = require("which-key")
--- wk.register({
---     {"<leader>s", group = "splits" },
---     {"<leader>f", group = "telescope" },
--- })
